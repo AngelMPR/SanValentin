@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 16px;
+    height: 100vh;
+    background: #0b1522;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Evita que los corazones se salgan de la pantalla */
+}
+
+.valentines_card {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+}
+
+.front_img {
+    width: 450px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 100px;
+    position: relative; 
+    border-radius: 20%;
+}
+
+.inside_img {
+    width: 350px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 100px;
+    position: relative; 
+}
+
+.valentines_card:hover .front_card{
+    transform: rotateY(-160deg); 
+} 
+.valentines_card:hover .front_text {
+    display: none;
+}
+.front_text, .inside_text{
+    color: #A60657;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+}
+
+.front_card {
+    position: relative;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: rgb(241, 214, 214);
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #ff1493;
+    width: 450px;
+    height: 800px;
+    border-radius: 8%;
+}
+.inside_card {
+    position: absolute;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: rgb(241, 214, 214);
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #ff1493;
+    width: 450px;
+    height: 800px;
+    z-index:-1;
+    left:0;
+    top:0;
+    border-radius: 8%;
+
+}
+.valentines_card audio {
+    display: none;
+}
+
+.valentines_card:hover .front_img {
+    display: none;
+}
+.inside_card audio {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+/* Estilos para los corazones */
+.heart {
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    position: absolute; /* Posicionamos los corazones de forma absoluta */
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: pulse-heart 0.6s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    border-radius: 50%;
+    box-shadow: 10px -10px 90px #f20044;
+}
+
+.heart::before {
+    top: -50%;
+}
+
+.heart::after {
+    right: -50%;
+}
+
+/* Animación de pulsado */
+@keyframes pulse-heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+/* Posicionamos cada corazón en diferentes lugares de la página */
+.heart1 {
+    top: 10%;
+    left: 5%;
+}
+
+.heart2 {
+    top: 20%;
+    right: 10%;
+}
+
+.heart3 {
+    top: 40%;
+    left: 15%;
+}
+
+.heart4 {
+    top: 64%;
+    right: 20%;
+}
+
+.heart5 {
+    top: 87%;
+    left: 25%;
+}
+
+.heart6 {
+    top: 90%;
+    right: 30%;
+}
+
+.heart7 {
+    top: 20%;
+    left: 30%;
+}
+
+.heart8 {
+    top: 50%;
+    right: 8%;
+}
+
+.heart9 {
+    top: 15%;
+    left: 65%;
+}
+
+.heart10 {
+    top: 55%;
+    right: 70%;
+}
+
+.heart11 {
+    top: 40%;
+    right: 28%;
+}
+
+.heart12 {
+    top: 80%;
+    right: 90%;
+}
+
+.heart13 {
+    top: 60%;
+    right: 94%;
+}
+
+.heart14 {
+    top: 80%;
+    right: 5%;
+}
