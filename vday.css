@@ -4,10 +4,26 @@ body {
     height: 100vh;
     background: #0b1522;
     display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden; /* Evita que los corazones se salgan de la pantalla */
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza el título y la tarjeta en columna */
+    align-items: center;
+    gap: 20px; /* Espacio entre el título y la tarjeta */
+}
+
+.title {
+    color: #ff1493; /* Color rosa */
+    font-family: 'Brush Script MT', cursive; /* Misma fuente que el texto de la tarjeta */
+    font-size: 100px; /* Tamaño grande */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.5); /* Sombra para resaltar */
+    margin: 0; /* Elimina el margen predeterminado */
 }
 
 .valentines_card {
@@ -19,7 +35,7 @@ body {
 }
 
 .front_img {
-    width: 450px;
+    width: 400px;
     margin-right: -50px;
     margin-left: -50px; 
     margin-top: 100px;
@@ -57,7 +73,7 @@ body {
     text-align: center;
     box-shadow: 0 24px 40px -8px #ff1493;
     width: 450px;
-    height: 800px;
+    height: 775px;
     border-radius: 8%;
 }
 .inside_card {
@@ -70,7 +86,7 @@ body {
     text-align: center;
     box-shadow: 0 24px 40px -8px #ff1493;
     width: 450px;
-    height: 800px;
+    height: 775px;
     z-index:-1;
     left:0;
     top:0;
@@ -202,4 +218,13 @@ body {
 .heart14 {
     top: 80%;
     right: 5%;
+}
+.title {
+    color: #ff1493; /* Color rosa */
+    font-family: 'Brush Script MT', cursive; /* Misma fuente que el texto de la tarjeta */
+    font-size: 48px; /* Tamaño grande */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio entre el título y la tarjeta */
+    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.5); /* Sombra para resaltar */
+    
 }
