@@ -14,13 +14,13 @@ body {
     display: flex;
     flex-direction: column; /* Organiza el título y la tarjeta en columna */
     align-items: center;
-    gap: 20px; /* Espacio entre el título y la tarjeta */
+    gap: 10px; /* Espacio entre el título y la tarjeta */
 }
 
 .title {
     color: #ff1493; /* Color rosa */
     font-family: 'Brush Script MT', cursive; /* Misma fuente que el texto de la tarjeta */
-    font-size: 100px; /* Tamaño grande */
+    font-size: 70px; /* Tamaño grande */
     text-align: center; /* Centrar el texto */
     text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.5); /* Sombra para resaltar */
     margin: 0; /* Elimina el margen predeterminado */
@@ -218,13 +218,4 @@ body {
 .heart14 {
     top: 80%;
     right: 5%;
-}
-.title {
-    color: #ff1493; /* Color rosa */
-    font-family: 'Brush Script MT', cursive; /* Misma fuente que el texto de la tarjeta */
-    font-size: 48px; /* Tamaño grande */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio entre el título y la tarjeta */
-    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.5); /* Sombra para resaltar */
-    
 }
