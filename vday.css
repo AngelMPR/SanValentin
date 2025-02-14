@@ -73,7 +73,7 @@ body {
     text-align: center;
     box-shadow: 0 24px 40px -8px #ff1493;
     width: 450px;
-    height: 775px;
+    height: 800px;
     border-radius: 8%;
 }
 .inside_card {
@@ -86,7 +86,7 @@ body {
     text-align: center;
     box-shadow: 0 24px 40px -8px #ff1493;
     width: 450px;
-    height: 775px;
+    height: 800px;
     z-index:-1;
     left:0;
     top:0;
